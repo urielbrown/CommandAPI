@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CommandApi.Models
 {
-    public class CommandApi
+    public class Command
     {
         [Key]
         [Required]
