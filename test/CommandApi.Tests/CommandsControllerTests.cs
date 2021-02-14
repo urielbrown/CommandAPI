@@ -163,8 +163,8 @@ namespace CommandApi.Tests
             mockRepo.Setup(repo => repo.GetCommandById(0)).Returns(() => null);
             var controller = new CommandsController(mockRepo.Object, mapper);
             var result = controller.DeleteCommand(0);
-            //Assert.IsType<NotFoundResult>(result);
-            Assert.IsType<OkResult>(result);
+            Assert.IsType<NotFoundResult>(result);
+            //Assert.IsType<OkResult>(result);
         }
 
 
